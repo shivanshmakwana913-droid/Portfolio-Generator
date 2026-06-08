@@ -30,11 +30,11 @@ function Blueprint({ data, customColors }) {
 
                 <div className="blueprint-grid">
                     <div className="blueprint-box">
-                        <h2 className="blueprint-box-title"></h2>
+                        <h2 className="blueprint-box-title">PROFILE</h2>
                         <p>{data.bio}</p>
                     </div>
                     <div className="blueprint-box">
-                        <h2 className="blueprint-box-title"></h2>
+                        <h2 className="blueprint-box-title">SKILLS</h2>
                         <div className="blueprint-skills">
                             {data.skills?.split(',').map((s, i) => (
                                 <span key={i} className="blueprint-skill">[{s.trim()}]</span>
@@ -44,7 +44,7 @@ function Blueprint({ data, customColors }) {
                 </div>
 
                 <div className="blueprint-box blueprint-projects-box">
-                    <h2 className="blueprint-box-title"></h2>
+                    <h2 className="blueprint-box-title">PROJECTS</h2>
                     {data.projects?.map((proj, i) => (
                         <div className="blueprint-project" key={i}>
                             <span className="blueprint-proj-num">#{String(i + 1).padStart(2, '0')}</span>

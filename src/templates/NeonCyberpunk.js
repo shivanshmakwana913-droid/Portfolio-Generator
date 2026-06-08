@@ -17,7 +17,7 @@ function NeonCyberpunk({ data, customColors }) {
                     <div className="neon-title-block">
                         <p className="neon-tag">&lt;portfolio&gt;</p>
                         <h1 className="neon-name">{data.name}</h1>
-                        <p className="neon-role">// {data.role}</p>
+                        <p className="neon-role">{"//"} {data.role}</p>
                         <div className="neon-links">
                             {data.email && <a href={`mailto:${data.email}`} className="neon-btn">EMAIL</a>}
                             {data.github && <a href={data.github} target="_blank" rel="noreferrer" className="neon-btn">GITHUB</a>}
